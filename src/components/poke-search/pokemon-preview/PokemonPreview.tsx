@@ -10,7 +10,11 @@ export default function PokemonPreview({ pokemon }: Props): ReactElement {
   return (
     <PokemonPreviewContainer to={`pokemon/${pokemon.name}`}>
       <figure style={{ flex: "0 0 50" }}>
-        <img src={pokemon.sprites.back_default} width={50} />
+        <img
+          src={pokemon.sprites.back_default}
+          width={50}
+          alt="preview_image"
+        />
       </figure>
       <PreviewTitle>{pokemon.name}</PreviewTitle>
     </PokemonPreviewContainer>

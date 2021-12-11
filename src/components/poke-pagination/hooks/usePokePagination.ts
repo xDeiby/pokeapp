@@ -1,6 +1,4 @@
-import { useEffect, useReducer, useState } from "react";
-import { IPokemonsResult } from "../../../services/interfaces/IPokemonsResult";
-import { pokeServiceInstance } from "../../../services/PokeServices";
+import { useReducer } from "react";
 import { genRange } from "../../../utils/genRange";
 
 interface IPaginationAction {
@@ -16,9 +14,6 @@ interface IPaginationState {
 }
 
 export function usePokePagination(visibles = 8, total: number) {
-  //   const [loading, setLoading] = useState<boolean>(false);
-  //   const [pokemons, setPokemons] = useState<IPokemonsResult>();
-
   const INITIAL_STATE: IPaginationState = {
     current: 1,
     visibles: genRange(1, total > visibles ? visibles : total),

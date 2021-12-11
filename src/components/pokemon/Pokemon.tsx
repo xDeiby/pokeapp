@@ -1,6 +1,5 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { IPokemon } from "../../services/interfaces/IPokemonsResult";
-import { pokeServiceInstance } from "../../services/PokeServices";
 import PokeSection from "./poke-section/PokeSection";
 import {
   CardContent,

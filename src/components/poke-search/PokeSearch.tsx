@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { ReactElement, useEffect, useRef, useState } from "react";
 import { IPokemon } from "../../services/interfaces/IPokemonsResult";
 import { pokeServiceInstance } from "../../services/PokeServices";
